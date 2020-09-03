@@ -1,0 +1,200 @@
+<!DOCTYPE >
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .miContainer{
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        .miFila{
+            background-color: aliceblue;
+        }
+        .miColumna{
+            background-color: pink;
+            border: 1px solid aliceblue;
+            padding: 20px;
+        }
+        body{
+            color: slateblue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .miCol{
+            background-color: springgreen;
+            border: 1px solid aliceblue;
+            padding: 40px;
+        }
+        .heightPropio{
+            height: 300px;
+        }
+        .punto{
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            padding: 40px;
+        }
+        .lejos{
+            margin-top: 130px;
+        }
+        .lejos2{
+            margin-top: 30px;
+        }
+        .cinco{
+            margin-top: 20px;
+            margin-left: 200px;
+        }
+    </style>
+   </head>
+   <body>
+       
+       <div class="container miContainer">
+           <h2>Propiedad: d-flex</h2>
+           <div class="miFila d-flex">
+               <div class="miColumna">Soy un divkjjjklj</div>
+               <div class="miColumna">Soy un div</div>
+               <div class="miColumna">Soy un div</div>
+
+           </div>
+           <hr>
+           <h2>Propiedad: justify-content-between</h2>
+           <div class="miFila d-flex justify-content-between">
+               <div class="miColumna">Soy un divkjjjklj</div>
+               <div class="miColumna">Soy un div</div>
+               <div class="miColumna">Soy un div</div>
+
+           </div>
+           <hr>
+           <h2>Propiedad: justify-content-end</h2>
+           <div class="miFila d-flex justify-content-end">
+               <div class="miColumna">Soy un divkjjjklj</div>
+               <div class="miColumna">Soy un div</div>
+               <div class="miColumna">Soy un div</div>
+
+           </div>
+           <hr>
+           <h2>Propiedad: justify-content-start</h2>
+           <div class="miFila d-flex justify-content-start">
+               <div class="miColumna">Soy un divkjjjklj</div>
+               <div class="miColumna">Soy un div</div>
+               <div class="miColumna">Soy un div</div>
+
+           </div>
+           <hr>
+           <h2>Propiedad: justify-content-around</h2>
+           <div class="miFila d-flex justify-content-around">
+               <div class="miColumna">Soy un divkjjjklj</div>
+               <div class="miColumna">Soy un div</div>
+               <div class="miColumna">Soy un div</div>
+
+           </div>
+           <hr>
+           <h2>Propiedad: justify-content-center</h2>
+           <div class="miFila d-flex justify-content-center">
+               <div class="miColumna">Soy un divkjjjklj</div>
+               <div class="miColumna">Soy un div</div>
+               <div class="miColumna">Soy un div</div>
+
+           </div>
+           <hr>
+           <h4>Practica con<small><code>.row</code></small></h4>
+           <div class="row justify-content-between">
+               <div class="col-3 miCol">col-3</div>
+               <div class="col-3 miCol">col-3</div>
+               <div class="col-3 miCol">col-3</div>
+           </div>
+           <hr>
+           <h2>Propiedad: flex-column</h2>
+           <div class="miFila d-flex flex-column">
+               <div class="miColumna">Soy un divkjjjklj</div>
+               <div class="miColumna">Soy un div</div>
+               <div class="miColumna">Soy un div</div>
+
+           </div>
+           <hr>
+           <h3>Propiedade de hijos</h3>
+           <hr>
+           <h4>Dado 1</h4>
+           <div class="miFila d-flex justify-content-between heightPropio align-items-end">
+               <div ></div>
+               <div class="punto align-self-center"></div>
+               <div ></div>
+           </div>
+           <hr>
+           <h4>Dado 2</h4>
+           <div class="miFila d-flex justify-content-between heightPropio align-items-end">
+               <div class="punto align-self-start"></div>
+               <div ></div>
+               <div class="punto align-self-end" ></div>
+           </div>
+           <hr>
+           <h4>Dado 3</h4>
+           <div class="miFila d-flex justify-content-between heightPropio align-items-end">
+            <div class="punto align-self-start"></div>
+            <div class="punto align-self-center"></div>
+            <div class="punto align-self-end" ></div>
+           </div>
+           <hr>
+           <h4>Dado 4</h4>
+           <div class="miFila d-column justify-content-between heightPropio ">
+
+               <div class=" d-flex justify-content-between">
+                <div class="punto"></div>
+                <div class="punto "></div>
+               </div>
+
+               <div class=" d-flex justify-content-between lejos">
+                <div class="punto "></div>
+                <div class="punto " ></div>
+               </div>
+            
+             
+           </div>
+           <hr>
+           <h4>Dado 5</h4>
+           <div class="miFila d-column justify-content-between heightPropio align-items-end">
+               <div class=" d-flex justify-content-between">
+                <div class="punto"></div>
+                <div class="punto "></div>
+               </div>
+
+               <div class=" d-flex justify-content-between">
+                <div class="punto cinco"></div>
+               </div>
+
+               <div class=" d-flex justify-content-between lejos2">
+                <div class="punto "></div>
+                <div class="punto " ></div>
+               </div>
+           </div>
+           <hr>
+           <h4>Dado 6</h4>
+           <div class="miFila d-column justify-content-between heightPropio align-items-end">
+            <div class=" d-flex justify-content-between">
+                <div class="punto"></div>
+                <div class="punto "></div>
+               </div>
+
+               <div class=" d-flex justify-content-between">
+                <div class="punto lejos2"></div>
+                <div class="punto lejos2" ></div>
+               </div>
+
+               <div class=" d-flex justify-content-between lejos2">
+                <div class="punto "></div>
+                <div class="punto " ></div>
+                
+                
+               </div>
+           </div>
+
+       
+       
+       </div>
+
+
+     
+   </body>
+</html>
